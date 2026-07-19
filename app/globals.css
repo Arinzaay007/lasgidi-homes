@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #EFE6D8;
+  color: #101B33;
+}
+
+/* Signature element: hand-painted gate signboard badge,
+   used for listing status + agent verification */
+.signboard {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border: 2.5px solid currentColor;
+  border-radius: 3px;
+  transform: rotate(-1.5deg);
+  box-shadow: 2px 2px 0 rgba(16, 27, 51, 0.15);
+}
+
+.signboard--available {
+  color: #1F7A4D;
+  background: #ffffff;
+}
+
+.signboard--taken {
+  color: #D84315;
+  background: #ffffff;
+  transform: rotate(1.5deg);
+}
+
+.signboard--verified {
+  color: #1F7A4D;
+  background: #ffffff;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
