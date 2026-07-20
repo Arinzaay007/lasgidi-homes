@@ -98,8 +98,8 @@ export default async function Home() {
                     {l.listing_type === "rent" ? "/yr" : ""}
                   </p>
                   {l.profiles?.verified && (
-                    <div className="mt-2">"mt-2">
-                 erifiedBadge />
+                    <div className="mt-2">
+                 <VerifiedBadge />
                     </div>
                   )}
                 </div>
